@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-16"?>
+<catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <book id="bk101">
+    <title>XML Developer's Guide</title>
+    <genre>Computer</genre>
+    <price>44.95</price>
+    <description>
+			An in-depth look at creating applications
+			with XML.
+		</description>
+    <author>Gambardella, Matthew</author>
+    <publish_date>2000-10-01T00:00:00</publish_date>
+  </book>
+  <book id="bk102">
+    <title>Midnight Rain</title>
+    <genre>Fantasy</genre>
+    <price>5.95</price>
+    <description>
+			A former architect battles corporate zombies,
+			an evil sorceress, and her own childhood to become queen
+			of the world.
+		</description>
+    <author>Ralls, Kim</author>
+    <publish_date>2000-12-16T00:00:00</publish_date>
+  </book>
+  <book id="bk103">
+    <title>Maeve Ascendant</title>
+    <genre>Fantasy</genre>
+    <price>5.95</price>
+    <description>
+			After the collapse of a nanotechnology
+			society in England, the young survivors lay the
+			foundation for a new society.
+		</description>
+    <author>Corets, Eva</author>
+    <publish_date>2000-11-17T00:00:00</publish_date>
+  </book>
+  <book id="bk104">
+    <title>Oberon's Legacy</title>
+    <genre>Fantasy</genre>
+    <price>5.95</price>
+    <description>
+			In post-apocalypse England, the mysterious
+			agent known only as Oberon helps to create a new life
+			for the inhabitants of London. Sequel to Maeve
+			Ascendant.
+		</description>
+    <author>Corets, Eva</author>
+    <publish_date>2001-03-10T00:00:00</publish_date>
+  </book>
+  <book id="bk105">
+    <title>The Sundered Grail</title>
+    <genre>Fantasy</genre>
+    <price>5.95</price>
+    <description>
+			The two daughters of Maeve, half-sisters,
+			battle one another for control of England. Sequel to
+			Oberon's Legacy.
+		</description>
+    <author>Corets, Eva</author>
+    <publish_date>2001-09-10T00:00:00</publish_date>
+  </book>
+  <book id="bk106">
+    <title>Lover Birds</title>
+    <genre>Romance</genre>
+    <price>4.95</price>
+    <description>
+			When Carla meets Paul at an ornithology
+			conference, tempers fly as feathers get ruffled.
+		</description>
+    <author>Randall, Cynthia</author>
+    <publish_date>2000-09-02T00:00:00</publish_date>
+  </book>
+  <book id="bk107">
+    <title>Splish Splash</title>
+    <genre>Romance</genre>
+    <price>4.95</price>
+    <description>
+			A deep sea diver finds true love twenty
+			thousand leagues beneath the sea.
+		</description>
+    <author>Thurman, Paula</author>
+    <publish_date>2000-11-02T00:00:00</publish_date>
+  </book>
+  <book id="bk108">
+    <title>Creepy Crawlies</title>
+    <genre>Horror</genre>
+    <price>4.95</price>
+    <description>
+			An anthology of horror stories about roaches,
+			centipedes, scorpions  and other insects.
+		</description>
+    <author>Knorr, Stefan</author>
+    <publish_date>2000-12-06T00:00:00</publish_date>
+  </book>
+  <book id="bk109">
+    <title>Paradox Lost</title>
+    <genre>Science Fiction</genre>
+    <price>6.95</price>
+    <description>
+			After an inadvertant trip through a Heisenberg
+			Uncertainty Device, James Salway discovers the problems
+			of being quantum.
+		</description>
+    <author>Kress, Peter</author>
+    <publish_date>2000-11-02T00:00:00</publish_date>
+  </book>
+  <book id="bk110">
+    <title>Microsoft .NET: The Programming Bible</title>
+    <genre>Computer</genre>
+    <price>36.95</price>
+    <description>
+			Microsoft's .NET initiative is explored in
+			detail in this deep programmer's reference.
+		</description>
+    <author>O'Brien, Tim</author>
+    <publish_date>2000-12-09T00:00:00</publish_date>
+  </book>
+  <book id="bk111">
+    <title>MSXML3: A Comprehensive Guide</title>
+    <genre>Computer</genre>
+    <price>36.95</price>
+    <description>
+			The Microsoft MSXML3 parser is covered in
+			detail, with attention to XML DOM interfaces, XSLT processing,
+			SAX and more.
+		</description>
+    <author>O'Brien, Tim</author>
+    <publish_date>2000-12-01T00:00:00</publish_date>
+  </book>
+  <book id="bk112">
+    <title>Visual Studio 7: A Comprehensive Guide</title>
+    <genre>Computer</genre>
+    <price>49.95</price>
+    <description>
+			Microsoft Visual Studio 7 is explored in depth,
+			looking at how Visual Basic, Visual C++, C#, and ASP+ are
+			integrated into a comprehensive development
+			environment.
+		</description>
+    <author>Galos, Mike</author>
+    <publish_date>2001-04-16T00:00:00</publish_date>
+  </book>
+  <book id="bk500">
+    <title>Sell like Wizkid</title>
+    <genre>Business</genre>
+    <price>33.5</price>
+    <description>Sell your stocks easily</description>
+    <author>Tosin Anderson</author>
+    <publish_date>2021-12-07T14:02:00</publish_date>
+  </book>
+  <book id="bk501">
+    <title>Theory of the Monks</title>
+    <genre>Culture</genre>
+    <price>33.4</price>
+    <description>Theory of the Monks</description>
+    <author>Alex Wilson</author>
+    <publish_date>2022-01-03T14:02:00</publish_date>
+  </book>
+</catalog>

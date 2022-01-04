@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" ?>
+<librarymember>
+	<libraryuser ID="LBU001">
+		<firstname>James</firstname>
+		<lastname>Smith</lastname>
+		<registrationdate>2021-10-01T00:00:00</registrationdate>
+		<isactive>Yes</isactive>
+	</libraryuser>
+	<libraryuser ID="LBU002">
+		<firstname>David</firstname>
+		<lastname>West</lastname>
+		<registrationdate>2021-10-01T00:00:00</registrationdate>
+		<isactive>Yes</isactive>
+	</libraryuser>
+	<libraryuser ID="LBU003">
+		<firstname>Alex</firstname>
+		<lastname>Boston</lastname>
+		<registrationdate>2021-10-01T00:00:00</registrationdate>
+		<isactive>Yes</isactive>
+	</libraryuser>
+	<libraryuser ID="LBU004">
+		<firstname>Anie</firstname>
+		<lastname>Broox</lastname>
+		<registrationdate>2021-10-01T00:00:00</registrationdate>
+		<isactive>Yes</isactive>
+	</libraryuser>
+	<libraryuser ID="LBU005">
+		<firstname>Andrew</firstname>
+		<lastname>Botler</lastname>
+		<registrationdate>2021-10-01T00:00:00</registrationdate>
+		<isactive>Yes</isactive>
+	</libraryuser>
+</librarymember>

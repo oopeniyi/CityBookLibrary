@@ -1,0 +1,61 @@
+﻿@model Entities.Models.Book
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+<div>
+    <h4>Book Details</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Genere)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Genere)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PublishDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PublishDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+    </dl>
+</div>
+<div class="float-right">
+    @Html.ActionLink("Return", "Index", "CheckIn", new { id = Model.ID }, new { @class = "btn btn-primary" })
+    @Html.ActionLink("Borrow", "Index", "BorrowBook", new { id = Model.ID }, new { @class = "btn btn-warning" })
+    <a asp-action="Index" class="btn btn-success">Back to List</a>
+</div>

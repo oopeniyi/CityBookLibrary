@@ -1,0 +1,70 @@
+﻿@model Entities.Models.BorrowTransaction
+
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+<div>
+    <h4>Catalog CheckIn</h4>
+    <hr />
+
+    @if (Model == null)
+    {
+        <div class="alert alert-danger" role="alert">The selected Item is not pending checkin</div>
+    }
+    else
+    {
+
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.ID)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.ID)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.BorrowerFullName)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.BorrowerFullName)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.BorrowedDate)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.BorrowedDate)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.ExpectedReturnDate)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.ExpectedReturnDate)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.IssuedBy)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.IssuedBy)
+            </dd>
+
+
+        </dl>
+    }
+</div>
+<div>
+    <form asp-action="Checkin" asp-controller="CheckIn">      
+        <p><br /></p>
+        <div class="float-right">
+            @if (Model != null)
+            {
+                @Html.HiddenFor(model => model.ID)
+                <input type="submit" value="Check-In" class="btn btn-danger" onclick="javascript: return confirm('Are you sure you want to check-in?')" />
+            }
+                <a asp-action="Index" asp-controller="Book" class="btn btn-success">Back to List</a>
+            </div>
+    </form>
+</div>
+

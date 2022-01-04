@@ -1,0 +1,102 @@
+﻿@model IEnumerable<Entities.Models.MusicDisk>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h4>Music Disk List</h4>
+
+<p class="float-right">
+    <a asp-action="Create" class="btn btn-success">Create New Music Disk</a>
+</p>
+<form asp-action="Index" asp-controller="MusicDisk">
+    <div class="form-group">
+        <div class="input-group">
+            <input class="form-control form-control" name="artist" type="text" placeholder="Search by Artist" />
+            <input type="submit" value="Search" class="btn btn-success text-white" />
+        </div>
+    </div>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Artist)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReleaseDate)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Genere)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Artist)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genere)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                <div class="btn-group btn-group-toggle">
+                    <label class="btn btn-warning active">
+                        <a href="@Url.Action("Edit", "MusicDisk", new { id = item.ID })" class="text-white">
+                            <span>
+                                Edit
+                            </span>
+                        </a>
+                    </label>
+                    <label class="btn btn-success text-white">
+                        <a href="@Url.Action("Details", "MusicDisk", new { id = item.ID })" class="text-white">
+                            <span>
+                                Details
+                            </span>
+                        </a>
+                    </label>
+                    <label class="btn btn-danger">
+                        <a href="@Url.Action("Delete", "MusicDisk", new { id = item.ID })" class="text-white">
+                            <span>
+                                Delete
+                            </span>
+                        </a>
+                    </label>
+                </div>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,97 @@
+﻿@model Entities.Models.Book
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div>
+    <h4>Borrow Book</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.ID)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.ID)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Author)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Author)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Title)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Title)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Genere)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Genere)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.PublishDate)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.PublishDate)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Price)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Price)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Description)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-md-6">
+            <form asp-action="Index" asp-controller="CheckOut">
+                <div>
+                    <label><strong>Borrowing Member</strong></label>
+                    <select id="MemberId" name="MemberId" class="form-control" asp-items="@(new SelectList(ViewBag.MemberList,"ID","FullName"))" onchange="ClearErrorPrompt()">
+                        <option value="">--Select--</option>
+                    </select>
+
+                    <span id="MemberIdValidator" style="color:red; font-style:italic"></span>
+                </div>
+                @Html.HiddenFor(model => model.ID)
+                <p><br /></p>
+                <div class="float-right">
+                    <input type="submit" value="CheckOut" class="btn btn-danger" onclick="return ValidateDropdown()" />
+                    <a asp-action="Index" asp-controller="Book" class="btn btn-success">Back to List</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function ValidateDropdown() {
+        
+        var selectedUser = $("#MemberId").find(":selected").val();
+        if (selectedUser == "") {
+            $("#MemberIdValidator").text("Please select a library member");
+            $("#MemberIdValidator").show();
+            return false;
+        } else {
+            return true;
+        }        
+    }
+
+    function ClearErrorPrompt() {
+        var selectedUser = $("#MemberId").find(":selected").val();
+        if (selectedUser != "") {
+            $("#MemberIdValidator").hide();
+        } 
+    }
+</script>

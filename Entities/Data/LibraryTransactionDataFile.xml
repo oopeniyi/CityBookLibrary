@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-16"?>
+<LibraryTransaction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BorrowTransaction ID="f0c4f13a4abb4c0ebe4a9e3d3cd256f3">
+    <BorrowedBy>LBU001</BorrowedBy>
+    <BorrowerFullName>James Smith</BorrowerFullName>
+    <IssuedBy>elianna</IssuedBy>
+    <ReceivedBy>LBU101</ReceivedBy>
+    <CatalogID>bk101</CatalogID>
+    <BorrowedDate>2021-10-01T00:00:00</BorrowedDate>
+    <IsReturned>true</IsReturned>
+    <ExpectedReturnDate>2021-10-01T00:00:00</ExpectedReturnDate>
+  </BorrowTransaction>
+  <BorrowTransaction ID="bebc5a9691e34e81b372eb1bc66df154">
+    <BorrowedBy>LBU002</BorrowedBy>
+    <BorrowerFullName>David West</BorrowerFullName>
+    <IssuedBy>elianna</IssuedBy>
+    <ReceivedBy />
+    <CatalogID>bk101</CatalogID>
+    <BorrowedDate>2021-10-01T00:00:00</BorrowedDate>
+    <IsReturned>false</IsReturned>
+    <ExpectedReturnDate>2021-10-01T00:00:00</ExpectedReturnDate>
+  </BorrowTransaction>
+  <BorrowTransaction ID="df0210ecab494583ba3f392f2d08b0e0">
+    <BorrowedBy>LBU001</BorrowedBy>
+    <BorrowerFullName>James Smith</BorrowerFullName>
+    <IssuedBy>elianna</IssuedBy>
+    <ReceivedBy xsi:nil="true" />
+    <CatalogID>bk105</CatalogID>
+    <BorrowedDate>2022-01-04T02:30:42.311657+01:00</BorrowedDate>
+    <IsReturned>false</IsReturned>
+    <ExpectedReturnDate>2022-01-18T02:30:42.3733101+01:00</ExpectedReturnDate>
+  </BorrowTransaction>
+  <BorrowTransaction ID="6f1a7e2f67a640aeb369aa0057b32212">
+    <BorrowedBy>LBU002</BorrowedBy>
+    <BorrowerFullName>David West</BorrowerFullName>
+    <IssuedBy>elianna</IssuedBy>
+    <ReceivedBy>elianna</ReceivedBy>
+    <CatalogID>bk104</CatalogID>
+    <BorrowedDate>2022-01-04T02:30:09.7122215+01:00</BorrowedDate>
+    <IsReturned>true</IsReturned>
+    <ExpectedReturnDate>2022-01-18T02:30:09.7122932+01:00</ExpectedReturnDate>
+  </BorrowTransaction>
+  <BorrowTransaction ID="9db949485a37438d873fe17d44a9e396">
+    <BorrowedBy>LBU002</BorrowedBy>
+    <BorrowerFullName>David West</BorrowerFullName>
+    <IssuedBy>elianna</IssuedBy>
+    <ReceivedBy xsi:nil="true" />
+    <CatalogID>bk501</CatalogID>
+    <BorrowedDate>2022-01-04T02:44:06.2794381+01:00</BorrowedDate>
+    <IsReturned>false</IsReturned>
+    <ExpectedReturnDate>2022-01-18T02:44:06.2800597+01:00</ExpectedReturnDate>
+  </BorrowTransaction>
+  <BorrowTransaction ID="b19fb390bc134ace974c1c0695063235">
+    <BorrowedBy>LBU005</BorrowedBy>
+    <BorrowerFullName>Andrew Botler</BorrowerFullName>
+    <IssuedBy>elianna</IssuedBy>
+    <ReceivedBy>oopeniyi</ReceivedBy>
+    <CatalogID>ms113</CatalogID>
+    <BorrowedDate>2022-01-04T02:55:37.1824409+01:00</BorrowedDate>
+    <IsReturned>true</IsReturned>
+    <ExpectedReturnDate>2022-01-18T02:55:37.182656+01:00</ExpectedReturnDate>
+  </BorrowTransaction>
+</LibraryTransaction>

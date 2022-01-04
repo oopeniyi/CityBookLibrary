@@ -1,0 +1,61 @@
+﻿@model Entities.Models.Book
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h4>Edit Books</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ID" class="control-label"></label>
+                <input asp-for="ID" class="form-control" readonly />
+                <span asp-validation-for="ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Author" class="control-label"></label>
+                <input asp-for="Author" class="form-control" />
+                <span asp-validation-for="Author" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Genere" class="control-label"></label>
+                <input asp-for="Genere" class="form-control" />
+                <span asp-validation-for="Genere" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PublishDate" class="control-label"></label>
+                <input asp-for="PublishDate" class="form-control" />
+                <span asp-validation-for="PublishDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>                      
+                <div class="float-right">
+                    <input type="submit" value="Save" class="btn btn-warning" onclick="javascript: return confirm('Are you sure you want to edit this record?')" />
+                    <a asp-action="Index" class="btn btn-success">Back to List</a>
+                </div>            
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
